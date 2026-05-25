@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArcosJordan_MaestroDetalle_SQLITE.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label Text="Gestión de Vehículos" 
+                   FontSize="24" 
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="Id Marca" FontAttributes="Bold"/>
+            <Entry x:Name="txtIdMarca" Keyboard="Numeric" Placeholder="Ej: 1"/>
+
+            <Label Text="Nombre de la Marca:" FontAttributes="Bold"/>
+            <Entry x:Name="txtNombreMarca" Placeholder="Ej: Toyota"/>
+ 
+            <Label Text="Id Modelo" FontAttributes="Bold"/>
+            <Entry x:Name="txtIdModelo" Keyboard="Numeric" Placeholder="Ej: 1"/>
+
+            <Label Text="Nombre del Modelo:" FontAttributes="Bold"/>
+            <Entry x:Name="txtNombreModelo" Placeholder="Ej: Corolla"/>
+
+            <Label Text="Año:" FontAttributes="Bold"/>
+            <Entry x:Name="txtAño" Keyboard="Numeric" Placeholder="Ej: 2024"/>
+
+            <Button x:Name="btnGuardar" Text="Guardar Nuevo" Clicked="btnGuardar_Clicked"/>
+            <Button x:Name="btnLeer" Text="Buscar por ID" Clicked="btnLeer_Clicked" />
+            <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked" />
+            <Button x:Name="btnEliminar" Text="Eliminar Modelo" Clicked="btnEliminar_Clicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
